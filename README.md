@@ -23,9 +23,9 @@
     
         git status
 
-            U: untracked files
-            A: added files (staging area)
-            M: modified files (modified after commit)
+- U: untracked files
+- A: added files (staging area)
+- M: modified files (modified after commit)
 
 ###	Add untracked files i.e. put into staging area
 
@@ -52,7 +52,9 @@
         
         git branch
     
-        git branch -a               # shows branches of both local and remote repo
+*  shows branches of both local and remote repo
+
+        git branch -a               
 
 ###	Create new branch
     
@@ -72,7 +74,7 @@
 
 ###	Merge branches
 
-* Go to the branch where you want the new-branch to be merged then use,
+* Go to the branch where you want the new-branch to be merged then use :    
 
         git merge branch-name
 
@@ -92,20 +94,21 @@
 
         git push origin <branch-name>
 
- ### Whenever we push a local branch to remote, we have to raise a PR (pull request) and then check for merge  conflicts, resolve conflicts and further merge the branches.
+###### Whenever we push a local branch to remote, we have to raise a PR (pull request) and then check for merge  conflicts, resolve conflicts and further merge the branches.
 
 
-### To keep projects up-to-date, you need to perform the following operations:
+###### To keep projects up-to-date, you need to perform the following operations:
 
-1.	git fetch origin 
+* fetch : gets all the change history of a tracked branch/repo
 
-       - gets all the change history of a tracked branch/repo
-			- OR
+	        git fetch origin 
 
-2.	git pull origin
+* pull : 	
 
-       - It is a combination of fetch and merge
-       - It pulls all the changes of remote repo into the local branch you are     pulling the changes
+    - It is a combination of fetch and merge
+    - It pulls all the changes of remote repo into the local branch you are pulling the changes
+
+            git pull origin
 
 
 ### Forking a remote repository (only on remote repo)
@@ -143,9 +146,10 @@
 
         git diff –staged 
 
-    - OR
+- OR
 
         git diff –cached
+        
 2. For seeing the changes between different branches 
 
         git diff branch-1 branch-2
@@ -153,8 +157,8 @@
 ###	Stashing the changes: 
 
          git stash
-         git stash -u          	# untracked files
-         git stash -a		    # include all files along with ignored files
+         git stash -u            	# untracked files
+         git stash -a		        # include all files along with ignored files
 
 - This allows you to temporarily store modified, tracked files in order to switch branches or work on something else without committing the changes to a branch.
 
