@@ -1,29 +1,29 @@
-# GIT and GITHUB
+## GIT and GITHUB
 
 •	Git is a version control system used for:
 1.	Tracking changes in code
 2.	Collaboration of code
 
-•	Check version 
+*	Check version 
     git --version
 
-•	Configure git
+*	Configure git
     git config --global user.name “jisna”
     git config --global user.email “jisnaanoop02@gmail.com”
 
 
-•	Initialize empty repository on local
+*	Initialize empty repository on local
     git init
 
 
-•	Check status of files
+*	Check status of files
     git status
 
         U: untracked files
         A: added files (staging area)
         M: modified files (modified after commit)
 
-•	Add untracked files i.e. put into staging area
+*	Add untracked files i.e. put into staging area
 # Add specific file
             git add <filename>
 # Add all files
