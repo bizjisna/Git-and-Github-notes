@@ -42,7 +42,7 @@
 
 ###	To unstage the files
         
-        git restore –staged <filename>
+        git restore --staged <filename>
 
 ###	To view history of commits 
        
@@ -92,7 +92,7 @@
 
 ### Push the local repo to remote
 
-        git push origin <branch-name>
+        git push origin main
 
 ###### Whenever we push a local branch to remote, we have to raise a PR (pull request) and then check for merge  conflicts, resolve conflicts and further merge the branches.
 
@@ -101,14 +101,14 @@
 
 * fetch : gets all the change history of a tracked branch/repo
 
-	        git fetch origin 
+	        git fetch origin main
 
 * pull : 	
 
     - It is a combination of fetch and merge
     - It pulls all the changes of remote repo into the local branch you are pulling the changes
 
-            git pull origin
+            git pull origin main
 
 
 ### Forking a remote repository (only on remote repo)
@@ -140,16 +140,17 @@
 
  
 ### git diff: 
+
 - It actually shows you all the changes done in the file after doing a commit 
 
 1. To see the changes between the previous commit and currently staged files
 
-        git diff –staged 
+        git diff --staged 
 
 - OR
 
-        git diff –cached
-        
+        git diff --cached
+
 2. For seeing the changes between different branches 
 
         git diff branch-1 branch-2
@@ -157,8 +158,14 @@
 ###	Stashing the changes: 
 
          git stash
-         git stash -u            	# untracked files
-         git stash -a		        # include all files along with ignored files
+
+- To include untracked files
+
+         git stash -u    
+
+- To include all files along with ignored files  
+
+         git stash -a		    
 
 - This allows you to temporarily store modified, tracked files in order to switch branches or work on something else without committing the changes to a branch.
 
