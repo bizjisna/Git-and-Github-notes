@@ -84,7 +84,8 @@
 ### Merge conflicts: 
 * While merging branches it may lead to conflicts due to changes in the code which need to be resolved manually in the editor and then committed to be merged further.
 
- 
+![Alt text](images/git_merge_conflicts.jpg) 
+
 # GITHUB
 
 * Create remote repository
@@ -97,8 +98,11 @@
 
         git push origin main
 
+![Alt text](images/git_PR_1.png)
+
 ###### Whenever we push a local branch to remote, we have to raise a PR (pull request) and then check for merge  conflicts, resolve conflicts and further merge the branches.
 
+![Alt text](images/git_PR.jpg)
 
 ###### To keep projects up-to-date, you need to perform the following operations:
 
@@ -113,6 +117,7 @@
 
             git pull origin main
 
+![Alt text](images/github_flow.png)
 
 ### Forking a remote repository (only on remote repo)
 
@@ -184,7 +189,7 @@
 
 	    git stash apply
 
- 
+ ![Alt text](images/git_flow.jpg)
 
 
 
