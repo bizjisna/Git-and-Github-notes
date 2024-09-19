@@ -13,7 +13,7 @@
         git config --global user.name “jisna”
         git config --global user.email “jisnaanoop02@gmail.com”
 
-![Alt text](GIT_NOTES/images/git_1.jpg)
+![Alt text](images/git_1.jpg)
 
 
 
